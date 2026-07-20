@@ -1,9 +1,5 @@
 
-/* =====================================================
-   ACM-W BPHC — Design tokens
-   Palette matched to the acm-w logo mark: blue and pink
-   accents on a deep-navy + white base.
-   ===================================================== */
+
 :root{
   --ink:        #12327A;
   --ink-soft:   #1B45A8;
@@ -968,22 +964,5 @@ body.edit-mode .card-edit-controls{display:flex;}
      .footer-links a {
          font-size: 0.85rem;
     }
-}
-/* Enhanced scrollbar
- ::-webkit-scrollbar {
-     width: 12px;
-}
- ::-webkit-scrollbar-track {
-     background: rgba(0, 0, 0, 0.8);
-     border-radius: 6px;
-}
- ::-webkit-scrollbar-thumb {
-     background: linear-gradient(45deg, #00ffff, #ff0080);
-     border-radius: 6px;
-     box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-}
- ::-webkit-scrollbar-thumb:hover {
-     background: linear-gradient(45deg, #ff0080, #8000ff);
-     box-shadow: 0 0 15px rgba(255, 0, 128, 0.7);
 }
 */
