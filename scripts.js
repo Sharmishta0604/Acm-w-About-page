@@ -72,7 +72,7 @@ themeToggle.addEventListener("click", () => {
    animation and hand rotation control to the pointer so
    dragging spins the cube freely. A short drag suppresses
    the click-to-navigate on that face so taps still work.
-   --------------------------------------------------- */
+   --------------------------------------------------- 
 const heroCube = document.getElementById("heroCube");
 if(heroCube){
   let rotX = -16, rotY = 0;
@@ -126,7 +126,7 @@ if(heroCube){
     }
   });
 }
-
+*/
 /* ---------------------------------------------------
    2. NAV — mobile toggle + Domains dropdown
    --------------------------------------------------- */
@@ -210,7 +210,7 @@ document.querySelectorAll(".domain-panel").forEach(panel => {
 
 /* ---------------------------------------------------
    4. EVENTS — calendar + day detail
-   --------------------------------------------------- */
+   --------------------------------------------------- 
 const EVENTS = [{"year": 2026, "month": 7, "day": 8, "title": "Technical domain interviews", "type": "Recruitment", "desc": "Shortlisted applicants interview slots, Room 204."}, {"year": 2026, "month": 7, "day": 12, "title": "Intro to Git & GitHub workshop", "type": "Workshop", "desc": "Beginner session, Library Seminar Hall, 6 PM."}, {"year": 2026, "month": 7, "day": 14, "title": "Poster drafts submission", "type": "Deadline", "desc": "Design domain \u2014 submit to shared drive by EOD."}, {"year": 2026, "month": 7, "day": 20, "title": "Senate open forum", "type": "Meeting", "desc": "Open Q&A with the current senate, all members welcome."}, {"year": 2026, "month": 7, "day": 27, "title": "Mentorship circle kickoff", "type": "Community", "desc": "First mentorship pairing session of the semester."}, {"year": 2026, "month": 8, "day": 3, "title": "Freshers' meet & greet", "type": "Community", "desc": "Open house for incoming first-years."}];
 const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 let calYear = 2026, calMonth = 7; // 1-indexed month to match EVENTS data
@@ -265,10 +265,10 @@ document.getElementById("calNext").addEventListener("click", () => {
   renderCalendar();
 });
 renderCalendar();
-
+*/
 /* ---------------------------------------------------
    5. PROJECTS & BLOGS — tag filter
-   --------------------------------------------------- */
+   ---------------------------------------------------
 const projectFiltersEl = document.getElementById("projectFilters");
 projectFiltersEl.addEventListener("click", (e) => {
   const btn = e.target.closest(".filter-chip");
@@ -278,7 +278,7 @@ projectFiltersEl.addEventListener("click", (e) => {
   document.querySelectorAll("#projectsGrid .project-card").forEach(card => {
     card.style.display = (filter === "All" || card.dataset.tag === filter) ? "" : "none";
   });
-});
+}); */
 
 document.querySelectorAll('.about-inner').forEach(inner => {
     const inside = inner.nextElementSibling; // the .tab-body right after this header
