@@ -60,51 +60,213 @@
 
 
     <!-- Section 3: About(My part)--->
-     <p class="title" id="about" data-page-id="about"><span class="bars bars--xs"></span> ABOUT US</p>
-     <h1 class="page-hero-title">Learn more about us, not only our name</h1>
-    <p class="page-hero-sub">ACM-W BPHC</p>
-    <section class="showcase">
-       
-        <div class="desc-container">
-        <div class="desc">
-            <span>ACM-W advocates internationally for the full engagement of women in all aspects of the computing field, providing a wide range of programs and services to ACM members and working in the larger community to advance the contributions of technical women. ACM-W warmly welcomes the participation of all individuals who are interested in advancing ACM’s mission and core values.</span>
+    .title {
+     text-align: left;
+     color: #5141fe;
+     position: relative;
+     padding-left: 50px;
+     padding-top: 40px;
+     font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.12em; color:var(--violet);
+     display:flex; align-items:center; gap:10px; margin-bottom:14px; text-transform:uppercase;
+     
 
-</div></div>
-        <div class="about-container">
-            <div class="about">
-                <div class="about-inner glass">
-                    <span>Who we are</span>
-                </div>
-                    <div class="about-inside">
-                    <p>ACM-W at Bits Hyderabad is a growing community for us to learn, practice and create<br>We have different domains such as:<br>Competitive Coding(CC)<br>Web Development(WebDev)<br>App Development(App Dev)<br>UI/UX</p>
-                    </div>
-                
-            </div>
+} 
 
-            <div class="about">
-                <div class="about-inner glass">
-                    
-                    <span>What we do</span></div>
-                    <div class="about-inside">
-                    <p>At ACM-W, we all collaborate together to create different projects and learn from each other</p>
-                    
-                </div>
-            </div>
+.showcase {
+     padding: 0px 0;
+     position:relative;
+     display:flex;
+     flex-direction: row;
+     flex-wrap:nowrap;
+     justify-content: space-evenly;
+     animation: heroRise 1s;
+}
 
-            <div class="about">
-                <div class="about-inner glass">
-                    
-                    <span>Founders</span></div>
-                    <div class="about-inside">
-                    <p>3D interfaces projected into reality space</p>
-                    
-                </div>
-            </div>
+.desc-container {
+     display: flex;
+     justify-content:space-evenly;
+     align-items:baseline;
+    
+     gap: 10px;
+     max-width: 1200px;
+     margin: 0 10;
+     padding: 10px 20px;
+}
+.desc{
+    width: 500px;
+    height: 450px;
+    background: linear-gradient(90deg,var(--d1),var(--d2));
+    color: var(--ink-soft);
+    background-blend-mode: luminosity;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px;
+    align-items: left;
+    flex-direction:row;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+    transition: all 0.4s ease;
+    animation: descGlow 3s ease-in-out 0s infinite;
+}
 
-            
-            
-        </div>
-    </section>
+.desc:hover {
+    /*transform:scale(1.05);*/
+    transition: all 0.4s ease;
+    
+}
+
+
+/*.desc p{
+    font-size: 1.3rem;
+     color: #ffffff;
+     margin-bottom: 50px;
+     font-weight: bold;
+     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}*/
+  
+ .about-container {
+     display: flex;
+     flex-direction:column;
+     justify-content: space-evenly;
+     align-content:center;
+     gap: 20px;
+     max-width: 90%;
+     margin: 10 10;
+     padding: 20px;
+     flex-wrap:wrap;
+     
+}
+ .about {
+     width: 500px;
+     
+     
+     /*display: inline flex;
+     border: 1px solid#000;
+     height: 200px;*/
+     
+     position:relative;
+     margin: 10px;
+     transition: all 0.2s ease;
+      
+}
+
+ .about:hover {
+     transform: scale(1);
+     transition: all 0.4s ease;
+}
+ .about-inner {
+    
+     width: 90%;
+     margin: 0 auto;
+     /*height: 100%;*/
+     background: linear-gradient(var(--ab1),var(--ab2));
+     border: 1px solid rgba(255, 0, 128, 0.3);
+     position:relative;
+     /*transform: rotate(30deg);*/
+     border-radius: 100px;
+     padding: 20px 10px;
+     display: flex;
+        justify-content: center;
+        align-items: center;
+     flex-direction:row;
+     text-align: center;
+     cursor: pointer;
+     transition: all 0s ease;
+     z-index: 1;
+}
+@keyframes descGlow {
+0%,100%{box-shadow: 0 0 20px rgb(0, 87, 168);}
+50%{box-shadow: 0 0 20px #7f60f0;}
+  
+  
+}
+
+@keyframes abGlow {
+0%,100%{box-shadow: 0 0 10px rgb(255, 120, 233);}
+50%{box-shadow: 0 0 10px #A9BFF5;}
+}
+
+
+ .about:hover .about-inner {
+  animation: abGlow 3s ease-in-out 0s infinite;
+    border:1px solid var(--magenta);
+     transition: all 0.2s ease;
+    /* overflow-y: scroll;
+     overflow-x: hidden;*/
+     
+}
+ /*.about:nth-child(odd) .about-inner {
+     background: linear-gradient(135deg, rgba(0, 255, 255, 0.12), rgba(255, 0, 128, 0.12));
+     border: 1px solid rgba(0, 255, 255, 0.3);
+}
+ .about:nth-child(even) .about-inner {
+     background: linear-gradient(135deg, rgba(255, 0, 128, 0.12), rgba(128, 0, 255, 0.12));
+     border: 1px solid rgba(255, 0, 128, 0.3);
+}*/
+
+.about-inner.active{
+    
+    width: 100%;
+    /*width: 100%;*/
+    background: linear-gradient(rgb(136, 151, 252), rgb(114, 151, 239));;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    transform: scaleY(1.1);
+
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 100%;   
+    height: 70px;
+    background: linear-gradient(90deg, rgba(224, 34, 193, 0.4), rgba(50, 60, 255, 0.3));
+    border-radius: 100px;
+    border-color: #0A1730;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition-duration: 0s;
+}
+
+/*.about:has(.about-inner.active)::before {
+    top: 12%; /* whatever value matches .about-inner's new vertical center *
+    visibility: hidden;
+}*/
+
+
+
+ 
+ .about-inside {
+    background-color: var(--line);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #1d014a;
+    line-height: 0;
+    
+    visibility: hidden;
+    
+}
+ .about-inside.open{
+    max-height: 400px;
+     border: 1px solid rgba(0, 255, 255, 0.3);
+    visibility: visible;
+    font-size: 0.95rem;
+    padding: 20px 10px 0px;
+    color: #1d014a;
+     /*transform: rotate(-30deg);*/
+     line-height: 1.5;
+     max-width: 100%;
+     text-align: center;
+     border-radius: 10px;
+     transition: all 0.4s ease;
+     z-index: -2;
+     overflow-y: scroll;
+ }
 
     <!-- Section 4: Timeline -->
     <!--<section class="timeline" id="timeline">
