@@ -59,214 +59,74 @@
 </header>
 
 
-    <!-- Section 3: About(My part)--->
-    .title {
-     text-align: left;
-     color: #5141fe;
-     position: relative;
-     padding-left: 50px;
-     padding-top: 40px;
-     font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.12em; color:var(--violet);
-     display:flex; align-items:center; gap:10px; margin-bottom:14px; text-transform:uppercase;
-     
+    <section class="page" id="page-about" data-page-id="about">
+  <section class="page-hero">
+    <p class="eyebrow"><span class="bars bars--xs"></span> ABOUT US</p>
+    <h1 class="page-hero-title">Learn more about us, Not just our name</h1>
+    <p class="page-hero-sub">ACM-W BPHC is the student chapter of ACM's Council on Women in Computing at BITS Pilani, Hyderabad Campus.</p>
+  </section>
 
-} 
-
-.showcase {
-     padding: 0px 0;
-     position:relative;
-     display:flex;
-     flex-direction: row;
-     flex-wrap:nowrap;
-     justify-content: space-evenly;
-     animation: heroRise 1s;
-}
-
-.desc-container {
-     display: flex;
-     justify-content:space-evenly;
-     align-items:baseline;
-    
-     gap: 10px;
-     max-width: 1200px;
-     margin: 0 10;
-     padding: 10px 20px;
-}
-.desc{
-    width: 500px;
-    height: 450px;
-    background: linear-gradient(90deg,var(--d1),var(--d2));
-    color: var(--ink-soft);
-    background-blend-mode: luminosity;
-    border-radius: 20px;
-    display: flex;
-    margin: 10px;
-    align-items: left;
-    flex-direction:row;
-    justify-content: center;
-    position: relative;
-    padding: 50px;
-    transition: all 0.4s ease;
-    animation: descGlow 3s ease-in-out 0s infinite;
-}
-
-.desc:hover {
-    /*transform:scale(1.05);*/
-    transition: all 0.4s ease;
-    
-}
-
-
-/*.desc p{
-    font-size: 1.3rem;
-     color: #ffffff;
-     margin-bottom: 50px;
-     font-weight: bold;
-     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}*/
-  
- .about-container {
-     display: flex;
-     flex-direction:column;
-     justify-content: space-evenly;
-     align-content:center;
-     gap: 20px;
-     max-width: 90%;
-     margin: 10 10;
-     padding: 20px;
-     flex-wrap:wrap;
-     
-}
- .about {
-     width: 500px;
-     
-     
-     /*display: inline flex;
-     border: 1px solid#000;
-     height: 200px;*/
-     
-     position:relative;
-     margin: 10px;
-     transition: all 0.2s ease;
+  <section class="section">
+    <div class="section-inner">
       
-}
+        
+       <div class="showcase">
+        <div class="desc-container">
+        <div class="desc">
+            <p class="about-values">ACM-W advocates internationally for the full engagement of women in all aspects of the computing field, providing a wide range of programs and services and working in the larger community to advance the contributions of technical women.<br> <br>
+ACM-W at Bits Pilani Hyderabad was formed in the campus on September 2023. Together we aim to build a supportive community where women can openly thrive and shape the future of technology. Our Club is open to all girls who have a passion for technology, regardless of their background or experience.
+            </p>
+</div></div>
+        <div class="about-container">
+            <div class="about">
+                <div class="about-inner">
+                    <span>Who we are</span>
+                </div>
+                    <div class="about-inside">
+                    <p>ACM-W at Bits Hyderabad is a growing community united by curiosity, ambition, and a shared passion for the technical field. Our aim is to create a space where women can code, create and grow together. One project, workshop, and connection at a time.<br> <br>
+We believe that diversity drives innovation, and that the best solutions come from rooms where different perspectives are welcomed and heard. On a campus where girls make up only a small percentage of students, we're building a space where that isn't the case. Where active participation is encouraged, mistakes are part of learning, and every member has a contribution.<br> <br>
+Our members range from first-year students just discovering their interest in tech to seniors mentoring others and leading projects. Regardless of your background or experience, you'll find a supportive community that works together and overcomes challenges.<br> <br>
+Through workshops, hackathons, mentorship and social events, we equip our members with the skills and confidence to thrive in tech and lead the next wave of innovation.</p>
+                    
 
- .about:hover {
-     transform: scale(1);
-     transition: all 0.4s ease;
-}
- .about-inner {
+                    </p>
+                    </div>
+                
+            </div>
+
+            <div class="about">
+                <div class="about-inner">
+                    
+                    <span>What we do</span></div>
+                    <div class="about-inside">
+                    <p>At ACM-W, we all collaborate together to create different projects and learn from each other.<br> </br>
+                    Workshops & Skill-Building
+We host hands-on technical workshops covering a variety of domains, no prior experience required.
+Hackathons & Project Sprints
+We organize women only hackathons and build sprints where members team up to design, code, and ship real projects in a short timeframe, turning ideas into working prototypes while building teamwork and technical skills under pressure.
+Speaker Sessions
+ We invite engineers, founders, and researchers from industry to share their journeys, insights, and advice, connecting students to real role models and potential career opportunities.
+Codeflix 
+Every so often, we gather together and all the members code and work on projects while binging a movie.
+</p>
+                    
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="about-inner">
+                    
+                    <span>Founders</span></div>
+                    <div class="about-inside">
+                    <p>3D interfaces projected into reality space</p>
+                    </div>
+            </div>
+
     
-     width: 90%;
-     margin: 0 auto;
-     /*height: 100%;*/
-     background: linear-gradient(var(--ab1),var(--ab2));
-     border: 1px solid rgba(255, 0, 128, 0.3);
-     position:relative;
-     /*transform: rotate(30deg);*/
-     border-radius: 100px;
-     padding: 20px 10px;
-     display: flex;
-        justify-content: center;
-        align-items: center;
-     flex-direction:row;
-     text-align: center;
-     cursor: pointer;
-     transition: all 0s ease;
-     z-index: 1;
-}
-@keyframes descGlow {
-0%,100%{box-shadow: 0 0 20px rgb(0, 87, 168);}
-50%{box-shadow: 0 0 20px #7f60f0;}
-  
-  
-}
-
-@keyframes abGlow {
-0%,100%{box-shadow: 0 0 10px rgb(255, 120, 233);}
-50%{box-shadow: 0 0 10px #A9BFF5;}
-}
-
-
- .about:hover .about-inner {
-  animation: abGlow 3s ease-in-out 0s infinite;
-    border:1px solid var(--magenta);
-     transition: all 0.2s ease;
-    /* overflow-y: scroll;
-     overflow-x: hidden;*/
-     
-}
- /*.about:nth-child(odd) .about-inner {
-     background: linear-gradient(135deg, rgba(0, 255, 255, 0.12), rgba(255, 0, 128, 0.12));
-     border: 1px solid rgba(0, 255, 255, 0.3);
-}
- .about:nth-child(even) .about-inner {
-     background: linear-gradient(135deg, rgba(255, 0, 128, 0.12), rgba(128, 0, 255, 0.12));
-     border: 1px solid rgba(255, 0, 128, 0.3);
-}*/
-
-.about-inner.active{
-    
-    width: 100%;
-    /*width: 100%;*/
-    background: linear-gradient(rgb(136, 151, 252), rgb(114, 151, 239));;
-    transition: all 0.4s ease;
-    border-radius: 15px;
-    transform: scaleY(1.1);
-
-}
-
-.about::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    width: 100%;   
-    height: 70px;
-    background: linear-gradient(90deg, rgba(224, 34, 193, 0.4), rgba(50, 60, 255, 0.3));
-    border-radius: 100px;
-    border-color: #0A1730;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition-duration: 0s;
-}
-
-/*.about:has(.about-inner.active)::before {
-    top: 12%; /* whatever value matches .about-inner's new vertical center *
-    visibility: hidden;
-}*/
-
-
-
- 
- .about-inside {
-    background-color: var(--line);
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    color: #1d014a;
-    line-height: 0;
-    
-    visibility: hidden;
-    
-}
- .about-inside.open{
-    max-height: 400px;
-     border: 1px solid rgba(0, 255, 255, 0.3);
-    visibility: visible;
-    font-size: 0.95rem;
-    padding: 20px 10px 0px;
-    color: #1d014a;
-     /*transform: rotate(-30deg);*/
-     line-height: 1.5;
-     max-width: 100%;
-     text-align: center;
-     border-radius: 10px;
-     transition: all 0.4s ease;
-     z-index: -2;
-     overflow-y: scroll;
- }
+      </div>
+    </div>
+  </section>
+</section>
 
     <!-- Section 4: Timeline -->
     <!--<section class="timeline" id="timeline">
