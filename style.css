@@ -385,11 +385,12 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block;}
 .desc{
     width: 500px;
     height: 450px;
-	margin: 0 auto
+	margin: 0 auto;
     background: linear-gradient(90deg,var(--d1),var(--d2));
     color: var(--ink-soft);
     background-blend-mode: luminosity;
     border-radius: 20px;
+	box-shadow:inset 0 0 0 1px rgba(255,255,255,0.18);
     display: flex;
     margin: 10px;
     align-items: left;
