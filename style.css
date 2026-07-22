@@ -774,6 +774,7 @@ body.edit-mode .card-edit-controls{display:flex;}
     
         .desc-container{
             justify-content:center;
+			margin: 0 auto;
         }
     
         .desc{
